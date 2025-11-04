@@ -1,0 +1,15 @@
+Failure # 1 (occurred at 2025-11-03_14-42-22)
+[36mray::ImplicitFunc.train()[39m (pid=92540, ip=127.0.0.1, actor_id=bd4e1502506052c173372eab01000000, repr=train_ppo)
+  File "/opt/miniconda3/envs/rltune/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 331, in train
+    raise skipped from exception_cause(skipped)
+  File "/opt/miniconda3/envs/rltune/lib/python3.10/site-packages/ray/air/_internal/util.py", line 107, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+  File "/opt/miniconda3/envs/rltune/lib/python3.10/site-packages/ray/tune/trainable/function_trainable.py", line 44, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+  File "/opt/miniconda3/envs/rltune/lib/python3.10/site-packages/ray/tune/trainable/function_trainable.py", line 249, in _trainable_func
+    output = fn()
+  File "/Users/frank/Param_Tune/test.py", line 80, in train_ppo
+    report(metrics={"mean_reward": mean_reward})
+  File "/opt/miniconda3/envs/rltune/lib/python3.10/site-packages/ray/train/v2/api/train_fn_utils.py", line 107, in report
+    raise DeprecationWarning(
+DeprecationWarning: `ray.train.report` is deprecated when running in a function passed to Ray Tune. Please use `ray.tune.report` instead. See this issue for more context: https://github.com/ray-project/ray/issues/49454

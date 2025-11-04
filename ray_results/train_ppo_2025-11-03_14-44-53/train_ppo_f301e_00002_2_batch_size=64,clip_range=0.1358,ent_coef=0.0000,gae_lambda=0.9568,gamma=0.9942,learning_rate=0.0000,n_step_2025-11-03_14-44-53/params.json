@@ -1,0 +1,10 @@
+{
+  "batch_size": 64,
+  "clip_range": 0.13576138410781646,
+  "ent_coef": 1.017207888294915e-06,
+  "gae_lambda": 0.9568076338191297,
+  "gamma": 0.9942100257319728,
+  "learning_rate": 1.242149943187144e-05,
+  "n_steps": 512,
+  "total_timesteps": 100000
+}
