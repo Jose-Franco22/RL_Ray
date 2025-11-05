@@ -28,8 +28,9 @@ def train_ppo(config):
     'config' is a dict containing the hyperparameters for this trial.
     """
     # Create the LunarLander environment instance
-    env = gym.make("BipedalWalker-v3")
+    # env = gym.make("BipedalWalker-v3")
     # env = gym.make("LunarLander-v3")
+    env = gym.make("InvertedDoublePendulum-v4", render_mode=None)
 
     # Instantiate PPO with the hyperparameters passed in 'config'
     # "MlpPolicy" = a simple fully-connected (MLP) policy network suitable for CartPole
