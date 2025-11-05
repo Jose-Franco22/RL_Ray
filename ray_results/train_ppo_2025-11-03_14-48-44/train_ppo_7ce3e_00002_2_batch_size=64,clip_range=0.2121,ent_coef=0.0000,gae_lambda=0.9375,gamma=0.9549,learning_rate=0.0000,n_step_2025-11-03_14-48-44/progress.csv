@@ -1,2 +1,0 @@
-mean_reward,timestamp,checkpoint_dir_name,done,training_iteration,trial_id,date,time_this_iter_s,time_total_s,pid,hostname,node_ip,time_since_restore,iterations_since_restore
-431.6,1762202950,,False,1,7ce3e_00002,2025-11-03_14-49-10,24.40294075012207,24.40294075012207,93384,FrankBook.local,127.0.0.1,24.40294075012207,1
